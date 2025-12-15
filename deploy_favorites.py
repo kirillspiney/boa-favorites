@@ -20,8 +20,8 @@ def main():
     print("Storing a person...")
     favorites_contract.add_person("Alice", 25)
 
-    person_data = favorites_contract.list_of_people(0)
-    print(f"Person: {person_data}")
+    favorite_number, name = favorites_contract.list_of_people(0)
+    print(f"Person: {name}, number: {favorite_number} ")
 
     # starting_favorite_number = favorites_contract.retrieve()
     # print(f"Starting favorite number is: {starting_favorite_number}")
